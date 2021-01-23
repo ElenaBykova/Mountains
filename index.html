@@ -8,76 +8,117 @@
   <meta name="keywords" content="Mountains">
   <title>MountainsMan</title>
 
-  <!--НУЖНА БУКВА Essential icons-->
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon16_16.png" >
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon32_32.png" >
-  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/img/favicon/favicon180_180.png" >
+  <!--Essential icons-->
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon16_16.png" >
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon32_32.png" >
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="./img/favicon/favicon180_180.png" >
 
   <!--Essancial tags for social media sharing-->
   <meta property="og:title" content="Mountains">
   <meta property="og:description" content="Mountains">
-  <meta property="og:image" content="ВСТАВИТЬ КАРТИНКУ"> <!--ФОРОШОП-->
+  <meta property="og:image" content="./img/favicon/favicon32_32.png">
   <meta property="og:url" content="Mountains">
   <meta property="twitter:card" content="summary_large_image">
 
   <!--Reset CSS-->
-  <link rel="stylesheet" href="/style/reset.css">
+  <link rel="stylesheet" href="./style/reset.css">
 
   <!--Main CSS-->
-  <link rel="stylesheet" href="/style/custom.css">
+  <link rel="stylesheet" href="./style/custom.css">
 
   <!--Google fonts-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;0,800;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style/fonts.css">
+  <link rel="stylesheet" href="./style/fonts.css">
 
 
   <!--Fonts Awesome-->
 
 
 </head>
-<header>
-  <div class="container">
-    <div class="header-box">
-        <div class="fl logo">
-          <img class="fl" src="./img/logo.png" alt="Mountains"><!--ФОРОШОП-->
+<body>
+  <header>
+    <div class="container">
+      <!--Popup-->
+      <div class="popup-wrapper">
+        <input type="checkbox" class="popup-checkbox" id="popupCheckboxOne">
+        <div class="popup">
+          <div class="popup-content">
+            <label for="popupCheckboxOne" class="popup-closer">&#215;</label>
+              <div class="popup-nav">
+                <nav>
+                  <ul class="popup-ul">
+                    <li><a href="#">our story</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">work</a></li>
+                    <li><a href="#">journal</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">work</a></li>
+                    <li><a href="#">journal</a></li>
+                  </ul>
+                </nav>
+              </div>
+          </div>
         </div>
-        <nav class="header-nav fl">
-          <ul class="header-nav-ul">
-            <li><a href="#">our story</a></li>
-            <li><a href="#">services</a></li>
-            <li><a href="#">work</a></li>
-            <li><a href="#">journal</a></li>
-            <li><a href="#">contact</a></li>
-            <li><a href="#">work</a></li>
-            <li><a href="#">journal</a></li>
-          </ul>
-        </nav>
-    </div>
-      <div class="fr">
-        <button class="button_callus">Call us</button>
+      </div>
+      <!--End popup-->
+      <div class="header-box">
+          <div class="fl logo">
+            <img class="fl" src="./img/logo.png" alt="Mountains">
+          </div>
+          <nav class="header-nav fl">
+            <ul class="header-nav-ul">
+              <li><a href="#">our story</a></li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">work</a></li>
+              <li><a href="#">journal</a></li>
+              <li><a href="#">contact</a></li>
+              <li><a href="#">work</a></li>
+              <li><a href="#">journal</a></li>
+            </ul>
+          </nav>
+      </div>
+        <div>
+          <!--Label for Popup instead Button-->
+          <label for="popupCheckboxOne" class="popup-shower button_callus">Call us</label>
+        </div>
       </div>
     </div>
-  </div>
-</header>
-<section class="sec-1">
-  <div class="container">
-    <div class="sec-1--box">
-      <h1 class="h1"><span class="sec-1-title--white">TRAVEL WITH US</span>
-          <span class="sec-1-title--blue">to the Mountains</span> 
-      </h1>
-      <p class="sec-1-title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid</p>
-      <button class="btn button_ordernow">order now</button>
-    </div>
-  </div>
-
-</section>
-<body>
-  
+  </header>
+  <main>
+    <section class="sec-1">
+      <div class="container">
+        <div class="sec-1--box">
+          <h1 class="h1"><span class="sec-1-title--white">TRAVEL WITH US</span>
+              <span class="sec-1-title--blue">to the Mountains</span> 
+          </h1>
+          <p class="sec-1-title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid</p>
+          <button class="btn button_ordernow">order now</button>
+        </div>
+      </div>
+    </section>
+    <section class="sec-2">
+      <div class="div-background"></div>
+      <div class="container clearfix sec-2-div">
+        <div class="sec-2-map">
+        </div>
+        <div class="fl div_aboutus">
+          <h2 class="sec-2-title">About us</h2>
+          <p class="sec-2-text">
+            Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.
+          </p>
+          <button class="button_readmore">Read more</button>
+        </div>
+        <div class="img_legs">
+        </div>
+        <div class="fl img_girls">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+  </footer>  
 </body>
-<footer>
-
-</footer>
 </html>
