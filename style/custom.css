@@ -8,6 +8,9 @@ font-family:"Bringin" !important;
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;}
 */
+body {
+  position: relative;
+}
 .container {
   max-width: 1170px;
   padding: 0px 15px;
@@ -114,6 +117,8 @@ font-family:"Bringin" !important;
 header {
   background-color: #bad2e260;
   min-height: 90px;
+  position: absolute;
+  width: 100%;
 }
 .header-box {
   overflow: auto;
@@ -201,6 +206,13 @@ background-repeat: no-repeat;
 background-position: center;
 padding: 220px 0px 150px 0px;
 }
+
+.zigzag {
+  margin: 0 auto;
+  width: 80px;
+  height: 10px;
+}
+
 .h1 {
   margin-bottom: 17px;
 }
@@ -274,6 +286,7 @@ display: block;
 /* Start style sec-2*/
 .sec-2 {
   background-color: #f6f4f4;
+  min-height: 670px;
 }
 .sec-2-div {
   position: relative;
@@ -374,4 +387,197 @@ display: block;
   color: #36aeea;
   border: 3px soli transparent;
   outline: none;
+}
+
+/*Section 6*/
+
+.sec-6 {
+  background-image: url(../img/section-6/background_sec6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 1077px;
+}
+.sec-6-div {
+  position: relative;
+}
+.map_blue {
+  background-color: transparent;
+  background-image: url(../img/section-6/map_blue.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 1470px;
+  height: 740px;
+  margin-top: 50px;
+  z-index: 1;
+}
+
+/*Начало стилей слайдера*/
+.slick-track {
+  height: 382px;
+}
+.slick-slide {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+button.slick-prev.slick-arrow:before {
+  color: #e5f2fc;
+}
+button.slick-next.slick-arrow:before {
+  color: #e5f2fc;
+}
+button.slick-prev:before {
+  content: '→';
+}
+button.slick-next:before {
+  content: '←';
+}
+
+
+
+/*Конец стилей слайдера*/
+
+.sec-title {
+  position: relative;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2c2e37;
+    margin-top: 55px;
+    position: relative;
+    z-index: 2;
+}
+.sec-title::before {
+  content: "";
+  background-image: url(../img/section-6/zigzag.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 80px;
+  height: 7px;
+  color: #d6d6d6;
+  font-family: FontAwesome;
+  margin-left: calc(50% - 40px);
+  margin-bottom: 35px;
+}
+
+.slider {
+  position: absolute;
+  z-index: 2;
+  margin: 100px auto;
+  width: 100%;
+}
+.slider_star {
+  height: 15px;
+  padding-top: 15px;
+  /*padding-left: 17.5px;*/
+}
+.fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+}
+.slider_carpathian {
+  background-color: white;
+  background-image: url(../img/section-6/card1_Carpathian.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 200px;
+  height: 382px;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.slider_alps {
+  background-color: white;
+  background-image: url(../img/section-6/card2_Alps.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 200px;
+  height: 382px;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.slider_pyrenees {
+  background-color: white;
+  background-image: url(../img/section-6/card3_Pyrenees.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 200px;
+  height: 382px;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.slider_rocky {
+  background-color: white;
+  background-image: url(../img/section-6/card4_Rocky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 200px;
+  height: 382px;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.slider_kavkaz {
+  background-color: white;
+  background-image: url(../img/section-6/card5_Kavkaz.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 200px;
+  height: 382px;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.slider_title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  color: white;
+  padding-top: 130px;
+  padding-left: 20px;
+}
+.slider_text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: white;
+  padding-top: 23px;
+  padding-left: 20px;
+}
+.price_div {
+  width: 200px;
+  height: 62px;
+  border-radius: 0 0 2px 2px;
+  background-color: rgb(0 0 0 / 20%);
+  position: absolute;
+  bottom: 0px;
+}
+.slider_price1 {
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+  padding-top: 23px;
+  padding-left: 20px;
+}
+.slider_price2 {
+  float: right;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 26px;
+  line-height: 22px;
+  color: white;
+  padding-top: 23px;
+  padding-right: 15px;
 }
