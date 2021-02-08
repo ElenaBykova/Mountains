@@ -8,9 +8,9 @@ font-family:"Bringin" !important;
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;}
 */
-body {
+/*body {
   position: relative;
-}
+}*/
 .container {
   max-width: 1170px;
   padding: 0px 15px;
@@ -473,7 +473,7 @@ button.slick-next:before {
 .slider_star {
   height: 15px;
   padding-top: 15px;
-  /*padding-left: 17.5px;*/
+  padding-left: 20px;
 }
 .fas {
   font-family: "Font Awesome 5 Free";
