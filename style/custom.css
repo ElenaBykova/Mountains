@@ -8,9 +8,9 @@ font-family:"Bringin" !important;
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;}
 */
-/*body {
+body {
   position: relative;
-}*/
+}
 .container {
   max-width: 1170px;
   padding: 0px 15px;
@@ -401,25 +401,16 @@ display: block;
 .sec-6-div {
   position: relative;
 }
-.map_blue {
-  background-color: transparent;
-  background-image: url(../img/section-6/map_blue.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  width: 1470px;
-  height: 740px;
-  margin-top: 50px;
-  z-index: 1;
-}
 
 /*Начало стилей слайдера*/
-.slick-track {
+div.slick-track {
   height: 382px;
 }
-.slick-slide {
-  margin-left: 20px;
-  margin-right: 20px;
+div.slick-slide {
+  margin-left: 17.5px;
+  margin-right: 17.5px;
+  min-height: 382px;
+  min-width: 200px;
 }
 button.slick-prev.slick-arrow:before {
   color: #e5f2fc;
@@ -434,21 +425,19 @@ button.slick-next:before {
   content: '←';
 }
 
-
-
 /*Конец стилей слайдера*/
 
 .sec-title {
-  position: relative;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     font-weight: bold;
+    letter-spacing: 3px;
     text-transform: uppercase;
     color: #2c2e37;
-    margin-top: 55px;
-    position: relative;
-    z-index: 2;
+    padding-top: 45px;
+    /*position: relative;
+    z-index: 2;*/
 }
 .sec-title::before {
   content: "";
@@ -461,13 +450,13 @@ button.slick-next:before {
   color: #d6d6d6;
   font-family: FontAwesome;
   margin-left: calc(50% - 40px);
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 .slider {
   position: absolute;
   z-index: 2;
-  margin: 100px auto;
+  margin-top: 95px;
   width: 100%;
 }
 .slider_star {
