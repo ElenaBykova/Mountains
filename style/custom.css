@@ -306,7 +306,7 @@ display: block;
   width: 360px;
   height: auto;
   position: absolute;
-  margin: 250px 0px 0px 20px;
+  margin: 200px 0px 0px 20px;
   z-index: 2;
 }
 .sec-2-title {
@@ -315,13 +315,27 @@ display: block;
   font-weight: bold;
   text-transform: uppercase;
   color: #2c2e37;
-  padding-bottom: 19px;
+  padding-bottom: 22px;
+}
+.sec-2-title::before {
+  content: "";
+  background-image: url(../img/section-6/zigzag.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 80px;
+  height: 7px;
+  color: #d6d6d6;
+  font-family: FontAwesome;
+  margin-bottom: 44px;
 }
 .sec-2-text {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  word-spacing: 2px;
   line-height: 26px;
   color: #949494 ;
+  word-break: break-all;
 }
 .div-background {
   width: 100%;
@@ -566,61 +580,99 @@ display: block;
   font-weight: bold;
   color: #36aeea;
 }
-.circle-big1 {
+.circl-lit-after:after {
+  content: "";
+  font-family: FontAwesome;
+  display: block;
+  background-image: url(../img/how_we_work/horizont_line.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 8%;
+  height: 2px;
+  margin-left: 27.3%;
+}
+.circl-lit-before::before {
+  content: "";
+  font-family: FontAwesome;
+  display: block;
+  background-image: url(../img/how_we_work/horizont_line.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 8%;
+  height: 2px;
+  margin-right: 27.3%;
+}
+.Shape_166 {
+  border-width: 5.53px;
+  border-color: rgb(240, 243, 246);
+  border-style: dashed;
+  position: absolute;
+  left: 521px;
+  top: 3313px;
+  width: 876.94px;
+  height: 107.94px;
+  z-index: 139;
+}
+
+.circle-big {
   width: 180px;
   height: 180px;
   border-radius: 50%;
+  margin: 60px auto 0px;
+  position: relative;
+}
+.circle-big::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 60px;
+  background-image: url(../img/how_we_work/vertical_line.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: FontAwesome;
+  position: absolute;
+  margin-left: calc(50% - 1px);
+  margin-top: -33%;
+}
+.big1 {
   background-image: url(../img/how_we_work/CircleBig1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0 auto;
 }
-.circle-big2 {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
+.big2 {
   background-image: url(../img/how_we_work/CircleBig2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0 auto;
 }
-.circle-big3 {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
+.big3 {
   background-image: url(../img/how_we_work/CircleBig3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0 auto;
 }
-.circle-big4 {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
+.big4 {
   background-image: url(../img/how_we_work/CircleBig4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0 auto;
 }
-.sec-5-text {
-  margin: 30px auto;
+.work-text {
+  margin: 25px auto;
   text-align: center;
+  max-width: 205px;
 }
-.sec-5-card-title {
+.circle-big-title {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 18px;
-  line-height: 24px;
   color: #2c2e37;
-
 }
-.sec-5-card-text {
+.circle-big-text {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: lighter;
-  line-height: 24px;
+  line-height: 26px;
   color: #949494;
-
 }
 
 
@@ -673,8 +725,6 @@ button.slick-next:before {
     text-transform: uppercase;
     color: #2c2e37;
     padding-top: 45px;
-    /*position: relative;
-    z-index: 2;*/
 }
 .sec-title::before {
   content: "";
