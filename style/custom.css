@@ -396,9 +396,10 @@ display: block;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  box-shadow: 0px 0px 3px 5px #00000036;
+  box-shadow: 0px 0px 21px 1px rgba(6, 6, 6, 0.13);
   flex-wrap: wrap;
-  margin: 70px auto 90px;
+  margin: 75px auto 90px;
+  background-color: rgb(255, 255, 255);
 }
 .our-journal_item {
   flex-basis: 33.33%;
@@ -407,6 +408,9 @@ display: block;
 .journal_item_bg {
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .journal_item_bg1{
   background-image: url(../img/our_journal/post01.jpg);
@@ -462,13 +466,11 @@ display: block;
 .journal_bg_icon {
   width: 82px;
   height: 82px;
-  margin: 0px auto;
-  margin-top: calc(50% - 41px);
 }
-.journal_content_general {
+.journal_content {
   position: absolute;
   z-index: 5;
-  padding: 45px 30px;
+  padding: 45px 0px;
   text-align: center;
   min-height: 290px;
 }
@@ -478,35 +480,47 @@ display: block;
   font-weight: bold;
   letter-spacing: 1.7px;
   color: #16b5ef;
-  padding-bottom: 55px;
+  padding-bottom: 48px;
   text-transform: uppercase;
 }
 .journal_content_title {
   font-family: 'Open Sans', sans-serif;
   font-size: 16.15px;
-  line-height: 24.23px;
+  line-height: 25px;
   font-weight: bold;
   letter-spacing: 2px;
   word-spacing: 2px;
   color: #212121;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
   text-transform: uppercase;
+  min-height: 70px;
+}
+.journal_title1 {
+  padding: 0 35px;
+}
+.journal_title2 {
+  padding: 0 60px;
+}
+.journal_title3 {
+  padding: 0 85px;
+}
+.line-through {
+  text-decoration: line-through;
 }
 .journal_content_text {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 22.8px;
-  letter-spacing: 1.7px;
+  word-spacing: 2.2px;
   color: #777777;
-  padding-bottom: 35px;
+  padding:0 56px 35px;
   min-height: 85px;
 }
 .journal_content_number {
-  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
   font-size: 14px;
-  line-height: 22.8px;
-  letter-spacing: 1.7px;
-  color: #777777;
+  line-height: 17.1px;
+  color: #212121;
 }
 /*Section 4*/
 .sec-4 {
@@ -519,20 +533,26 @@ display: block;
 
 }
 /*Section 5*/
-.sec-5-div {
+.how_we_work--div {
 
 }
-.sec-5-div-card {
-  width: 1160px;
+.how_we_work-wrapper {
+  /*width: 1160px;*/
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 75px auto 60px;
 }
-.sec-5-card {
-  width: 210px;
-  height: 400px;
+.how_we_work-card {
+  /*width: 210px;
+  height: 400px;*/
+  width: 25%;
 }
 .circle-little {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -540,11 +560,17 @@ display: block;
   background-color: white;
   margin: 0 auto;
 }
+.circle-little p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #36aeea;
+}
 .circle-big1 {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background-image: url(../img/section-5/CircleBig1.jpg);
+  background-image: url(../img/how_we_work/CircleBig1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -553,7 +579,7 @@ display: block;
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background-image: url(../img/section-5/CircleBig2.jpg);
+  background-image: url(../img/how_we_work/CircleBig2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -562,7 +588,7 @@ display: block;
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background-image: url(../img/section-5/CircleBig3.jpg);
+  background-image: url(../img/how_we_work/CircleBig3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -571,7 +597,7 @@ display: block;
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background-image: url(../img/section-5/CircleBig4.jpg);
+  background-image: url(../img/how_we_work/CircleBig4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -812,12 +838,26 @@ button.slick-next:before {
     border-right: 50px solid rgb(255 255 255);
     border-bottom: 50px solid transparent;
   }
+  /*секция How we work*/
+  .how_we_work-wrapper {
+    /*width: 1160px;*/
+    width: 50%;
+  }
+  .how_we_work-card {
+    /*width: 210px;
+    height: 400px;*/
+    width: 50%;
+  }
 }
 
 /*Что-то намутила с медиа-запросом. Не получается последовательность*/
 @media (max-width: 770px) {
+  .our-journal_wrapper {
+    display: flex;
+    max-width: 380px;
+  }
   .our-journal_item {
-    min-width: 380px;
+    flex-basis: 100%;
   }
   .journal_item--content1 {
     order: 1;
@@ -826,15 +866,64 @@ button.slick-next:before {
     order: 2;
   }
   .journal_item--content2 {
-    order: 3;
-  }
-  .journal_item_bg2 {
-    order: 4;
-  }
-  .journal_item--content3 {
     order: 5;
   }
-  .journal_item_bg3 {
+  .journal_item_bg2 {
     order: 6;
   }
+  .journal_item--content3 {
+    order: 3;
+  }
+  .journal_item_bg3 {
+    order: 4;
+  }
+  .journal_item--content1::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 340px;
+    left: 10px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #ffffff;
+  }
+  .journal_item--content3::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 340px;
+    left: 270px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #ffffff;
+  }
+  .journal_item--content2::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 340px;
+    left: 10px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #ffffff;
+  }
+  /*секция How we work*/
+  .how_we_work-wrapper {
+    /*width: 1160px;*/
+    width: 50%;
+  }
+  .how_we_work-card {
+    /*width: 210px;
+    height: 400px;*/
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  
+
 }
