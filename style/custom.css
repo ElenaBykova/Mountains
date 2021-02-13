@@ -402,7 +402,9 @@ display: block;
   border: 3px soli transparent;
   outline: none;
 }
-/*Section 3*/
+
+/*Our journal*/
+
 .our-journal {
   background-color: white;
 }
@@ -536,6 +538,7 @@ display: block;
   line-height: 17.1px;
   color: #212121;
 }
+
 /*Section 4*/
 .sec-4 {
   background-color: #f6f4f4;
@@ -544,14 +547,10 @@ display: block;
   background-image: url(../img/section-4/background-4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-
 }
-/*Section 5*/
-.how_we_work--div {
 
-}
+/*How we work*/
 .how_we_work-wrapper {
-  /*width: 1160px;*/
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -559,8 +558,6 @@ display: block;
   margin: 75px auto 60px;
 }
 .how_we_work-card {
-  /*width: 210px;
-  height: 400px;*/
   width: 25%;
 }
 .circle-little {
@@ -588,9 +585,9 @@ display: block;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  width: 8%;
+  width: 8.35%;
   height: 2px;
-  margin-left: 27.3%;
+  margin-left: 27%;
 }
 .circl-lit-before::before {
   content: "";
@@ -600,22 +597,46 @@ display: block;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  width: 8%;
+  width: 8.35%;
   height: 2px;
-  margin-right: 27.3%;
+  margin-right: 27%;
 }
-.Shape_166 {
-  border-width: 5.53px;
-  border-color: rgb(240, 243, 246);
-  border-style: dashed;
+.circl-lit-after:after {
+  content: "";
+  font-family: FontAwesome;
+  display: block;
+  background-image: url(../img/how_we_work/horizont_line.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: absolute;
-  left: 521px;
-  top: 3313px;
-  width: 876.94px;
-  height: 107.94px;
-  z-index: 139;
+  width: 8.35%;
+  height: 2px;
+  margin-left: 27%;
 }
-
+.circl-lit-before-23::before {
+  content: "";
+  font-family: FontAwesome;
+  display: block;
+  background-image: url(../img/how_we_work/horizont_line.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 8.35%;
+  height: 2px;
+  margin-right: 27%;
+}
+.circl-lit-after-23:after {
+  content: "";
+  font-family: FontAwesome;
+  display: block;
+  background-image: url(../img/how_we_work/horizont_line.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 8.35%;
+  height: 2px;
+  margin-left: 27%;
+}
 .circle-big {
   width: 180px;
   height: 180px;
@@ -678,7 +699,7 @@ display: block;
 
 
 
-/*Section 6*/
+/*Travel with us*/
 
 .sec-6 {
   background-image: url(../img/section-6/background_sec6.jpg);
@@ -888,19 +909,29 @@ button.slick-next:before {
     border-right: 50px solid rgb(255 255 255);
     border-bottom: 50px solid transparent;
   }
-  /*секция How we work*/
   .how_we_work-wrapper {
-    /*width: 1160px;*/
     width: 50%;
   }
   .how_we_work-card {
-    /*width: 210px;
-    height: 400px;*/
     width: 50%;
+  }
+  .circl-lit-after:after {
+    width: 11%;
+    margin-left: 25%;
+}
+  .circl-lit-before:before {
+    width: 11%;
+    margin-right: 25%;
+}
+  .circl-lit-after-23::after {
+    display: none;
+  }
+  .circl-lit-before-23::before {
+    display: none;
   }
 }
 
-/*Что-то намутила с медиа-запросом. Не получается последовательность*/
+
 @media (max-width: 770px) {
   .our-journal_wrapper {
     display: flex;
@@ -960,20 +991,20 @@ button.slick-next:before {
     border-right: 50px solid transparent;
     border-top: 50px solid #ffffff;
   }
-  /*секция How we work*/
   .how_we_work-wrapper {
-    /*width: 1160px;*/
     width: 50%;
   }
   .how_we_work-card {
-    /*width: 210px;
-    height: 400px;*/
     width: 100%;
+  }
+  .circl-lit-after:after {
+    display: none;
+  }
+  .circl-lit-before::before {
+    display: none;
   }
 }
 
 @media (max-width: 480px) {
-  
-  
-
+ 
 }
