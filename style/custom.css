@@ -316,6 +316,8 @@ display: block;
   text-transform: uppercase;
   color: #2c2e37;
   padding-bottom: 22px;
+  word-spacing: 5.2px;
+  letter-spacing: 0.5px;
 }
 .sec-2-title::before {
   content: "";
@@ -539,16 +541,99 @@ display: block;
   color: #212121;
 }
 
-/*Section 4*/
-.sec-4 {
-  background-color: #f6f4f4;
-}
-.sec-4 div {
-  background-image: url(../img/section-4/background-4.jpg);
+/*Form*/
+.form {
+  background-image: url(../img/section-4/background_form.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
 }
-
+.form-div {
+  padding-top: 110px;
+  padding-bottom: 235px;
+  margin-left: 20px;
+}
+.form-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  word-spacing: 2px;
+  line-height: 26px;
+  color: #949494 ;
+  padding-bottom: 25px;
+  word-break: break-all;
+}
+.text-block {
+  display: block;
+}
+.form_area {
+  max-width: 852px;
+  height: 62px;
+  background-color: white;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.your_name {
+  width: 275px;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: 1px solid #ebebeb ;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #848484;
+  margin-left: 20px;
+}
+input.your_name:focus {
+  outline: none;
+}
+.your_phone {
+  width: 300px;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #848484;
+  margin-left: 20px;
+}
+input.your_phone:focus {
+  outline: none;
+}
+.button_form {
+  background-color: #36aeea;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 225px;
+  height: 56px;
+  margin-right: 3px;
+}
+.button_form:hover {
+  background-color: transparent;
+  color: #36aeea;
+  border: 3px solid #36aeea;
+}
+.button_form:focus {
+  background-color: #36aeea;
+  color: white;
+  border: 3px solid transparent;
+  outline: none;
+}
+.button_form:active {
+  background-color: white;
+  color: #36aeea;
+  border: 3px soli transparent;
+  outline: none;
+}
+.form_comment {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #36aeea;
+}
 /*How we work*/
 .how_we_work-wrapper {
   width: 100%;
@@ -745,7 +830,7 @@ button.slick-next:before {
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #2c2e37;
-    padding-top: 45px;
+    padding-top: 70px;
 }
 .sec-title::before {
   content: "";
@@ -879,6 +964,68 @@ button.slick-next:before {
   padding-right: 15px;
 }
 
+/*Gallery*/
+.gallery-grid {
+  margin-top: 70px;
+  margin-bottom: 80px;
+  height: 100%;
+  overflow: hidden;
+}
+.gallery-grid div {
+  float: left;
+}
+.top-left {
+  width: 263px;
+  height: 243px;
+  margin: 0 15px 15px 0;
+}
+.top-centre {
+  width: 361px;
+  height: 243px;
+  margin: 0 15px 15px 15px;
+}
+.top-right {
+  width: 457px;
+  height: 343px;
+  margin: 0 0 15px 15px;
+}
+.bottom-left {
+  width: 263px;
+  height: 281px;
+  margin: 15px 15px 15px 0;
+}
+.bottom-centre {
+  width: 427px;
+  height: 427px;
+  margin: 15px 15px 0 15px;
+}
+.bottom-right {
+  width: 455px;
+  height: 281px;
+  margin: 15px 0 0 15px;
+}
+
+/*Logo*/
+.brends {
+  background-color: #f8f9fa;
+}
+.logo-sprite {
+  background-image: url(../img/logo/sprite_logo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 180px;
+}
+
+/*Clients say*/
+.our_clients_say {
+  background-image: url(../img/clients_say/background_clients_say.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1365px;
+}
+
 
 
 
@@ -928,6 +1075,18 @@ button.slick-next:before {
   }
   .circl-lit-before-23::before {
     display: none;
+  }
+  .form_area {
+    max-width: 860px;
+    min-height: 62px;
+    background-color: white;
+    border-radius: 3px;
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  .button_form {
+    display: inline-block;
   }
 }
 

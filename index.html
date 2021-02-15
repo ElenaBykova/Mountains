@@ -42,6 +42,12 @@
   <link rel="stylesheet" type="text/css" href="./slider/slick.css"/>
   <link rel="stylesheet" type="text/css" href="./slider/slick-theme.css"/>
 
+  <!--<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
   <header>
@@ -96,7 +102,7 @@
     <section class="sec-1">
       <div class="container">
         <div class="sec-1--box">
-          <h1 class="h1"><span class="sec-1-title--white">TRAVEL WITH US</span>
+          <h1 class="h1"><span class="sec-1-title--white" data-aos="zoom-out-left">TRAVEL WITH US</span>
               <span class="sec-1-title--blue">to the Mountains</span> 
           </h1>
           <p class="sec-1-title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid</p>
@@ -110,7 +116,7 @@
         <div class="sec-2-map">
         </div>
         <div class="fl div_aboutus">
-          <h2 class="sec-2-title">About us</h2>
+          <h2 class="sec-2-title animate__animated" data-aos="zoom-out-down">About us</h2>
           <p class="sec-2-text">
             Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.
           </p>
@@ -166,13 +172,25 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
-    <section class="sec-4">
-      <div>
-        <div class="container clearfix sec-4-div">
-
+    <section class="form">
+      <div class="container clearfix">
+        <div class="form-div">
+          <h2 class="sec-2-title animate__animated" data-aos="zoom-out-down">Do you wanna go?</h2>
+          <p class="form-text">
+            Aliquam sed posuere urna, et gravida nisl. Praesent <span class="text-block">interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.</span>
+          </p>
+          <form action="/login" method="POST" class="form_area">
+            <label>
+              <input class="your_name" type="text" placeholder="Your name:">
+            </label>
+            <label>
+              <input class="your_phone" type="tel" placeholder="Your phone:">
+            </label>
+            <button class="button_form">Read more</button>
+          </form>
+          <p class="form_comment">* Your data will not be transeffered</p>
         </div>
       </div>
     </section>
@@ -300,7 +318,7 @@
             </div>
           </div>
           <div class="slider_alps">
- <div class="slider_star">
+            <div class="slider_star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -316,8 +334,42 @@
           </div>
         </div>
     </section>
+    <section class="gallery">
+      <div class="container clearfix">
+        <h3 class="sec-title">Gallery</h3>
+      <div class="gallery-grid">
+        <div><img class="top-left" src="./img/gallery/top-left.jpg" alt="TopLeft"></div>
+        <div><img class="top-centre" src="./img/gallery/top-centre.jpg" alt="TopLeft"></div>
+        <div><img class="top-right" src="./img/gallery/top-right.jpg" alt="TopLeft"></div>
+        <div><img class="bottom-left" src="./img/gallery/bottom-left.jpg" alt="TopLeft"></div>
+        <div><img class="bottom-centre" src="./img/gallery/bottom-centre.jpg" alt="TopLeft"></div>
+        <div><img class="bottom-right" src="./img/gallery/bottom-right.jpg" alt="TopLeft"></div>
+      </div>
+      </div>
+    </section>
+    <section class="brends clearfix">
+      <div class="container logo-sprite">
+        <nav>
+          <ul>
+            <li><a href="#" class="slack"></a></li>
+            <li><a href="#" class="adobe"></a></li>
+            <li><a href="#" class="google"></a></li>
+            <li><a href="#" class="facebook"></a></li>
+            <li><a href="#" class="spotify"></a></li>
+            <li><a href="#" class="nike"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="our_clients_say">
+      <div class="container clearfix">
+        <h3 class="sec-title">Our clients say</h3>
+      </div>
+    </section>
+    <section class="contacs"></section>
   </main>
   <footer>
+    <section class="footer"></section>
   </footer> 
   
 
@@ -363,6 +415,13 @@
     });
     });
   </script>
-
+  <!--<script src="./js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+    </script>-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
