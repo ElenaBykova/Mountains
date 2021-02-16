@@ -808,10 +808,10 @@ div.slick-slide {
   min-width: 200px;
 }
 button.slick-prev.slick-arrow:before {
-  color: #e5f2fc;
+  color: #bcbcbc;
 }
 button.slick-next.slick-arrow:before {
-  color: #e5f2fc;
+  color: #bcbcbc;
 }
 button.slick-prev:before {
   content: '→';
@@ -1009,12 +1009,43 @@ button.slick-next:before {
 .brends {
   background-color: #f8f9fa;
 }
-.logo-sprite {
-  background-image: url(../img/logo/sprite_logo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 180px;
+.brends_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.card_brend {
+  padding: 75px 0 70px 0;
+}
+.slack {
+  width: 80px;
+  padding-right: 10px;
+}
+.adobe {
+  width: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.google {
+  width: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.facebook {
+  width: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.spotify {
+  width: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.nike {
+  width: 70px;
+  padding-left: 10px;
 }
 
 /*Clients say*/
@@ -1025,8 +1056,99 @@ button.slick-next:before {
   background-size: cover;
   min-height: 1365px;
 }
+.clients_say_wrapper {
+  margin-top: 90px;
+  padding: 0 25px;
+}
+.clients_say_card {
+  max-width: 540px;
+  margin: 0 27.5px;
+}
+.qoute {
+  width: 24px;
+  height: 22px;
+}
+.clients_say_text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 33px;
+  color: #adadad;
+}
+.clients_say_sign {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.clients_say_photo {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #adadad;
+}
+.clients_say_name {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 33px;
+  color: #36aeea;
+  white-space: pre-wrap;
+  padding-left: 20px;
+}
+.clients_say_work {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 33px;
+  color: #36aeea;
+  white-space: pre-wrap;
+  padding-left: 5px;
+}
+
+/*Contscts form*/
+.contacts_form_wrap {
+  margin: 0 auto;
+  width: 300px;
+  height: auto;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
+/*
+a {
+  background-image: url(https://www.idg.net.ua/blog/wp-content/uploads/sprites2.png);
+  background-repeat: no-repeat;
+  height: 98px;
+  width: 100px;
+  display: inline-block;
+  margin-right: 10px;
+  transition: all 0.3s
+}
+
+.twitter {
+  background-position: -100px top ;
+}
+.youtube {
+  background-position: -200px top ;
+}
+.instagram {
+  background-position: -300px top ;
+}
+.linkedin {
+  background-position: -400px top ;
+}
+.trumbl {
+  background-position: -500px top ;
+}
+.google {
+  background-position: -600px top ;
+}
+.icons:hover {
+  background-position-y: bottom;
+  ;
+}
+*/
 
 
 @media (max-width: 998px) {
@@ -1088,6 +1210,9 @@ button.slick-next:before {
   .button_form {
     display: inline-block;
   }
+  .brends_wrapper {
+    width: 42%;
+}
 }
 
 
@@ -1161,6 +1286,9 @@ button.slick-next:before {
   }
   .circl-lit-before::before {
     display: none;
+  }
+  .brends_wrapper {
+    width: 39%;
   }
 }
 
