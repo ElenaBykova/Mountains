@@ -108,6 +108,10 @@
           <p class="sec-1-title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid</p>
           <button class="btn button_ordernow">order now</button>
         </div>
+        <div class="sec-1--man">
+          <img src="./img/section-1/man-bg.png" alt="Man">
+        </div>
+        <div class="sec-1--boxtop"></div>
       </div>
     </section>
     <section class="sec-2">
@@ -350,32 +354,32 @@
     <section class="clearfix brends">
       <div class="container brends_wrapper">
           <div>
-            <a href="#" class="slack_">
+            <a href="#" target="_blank">
               <img class="slack card_brend" src="./img/logo/slack.png" alt="Slack">
             </a>
           </div>
           <div>
-            <a href="#" class="adobe">
+            <a href="#" target="_blank">
               <img class="adobe card_brend" src="./img/logo/adobe.png" alt="Adobe">
             </a>
           </div>
           <div>
-            <a href="#" class="google">
+            <a href="#" target="_blank">
               <img class="google card_brend" src="./img/logo/google.png" alt="Google">
             </a>
           </div>
           <div>
-            <a href="#" class="facebook">
+            <a href="#" target="_blank">
               <img class="facebook card_brend" src="./img/logo/facebook.png" alt="Facebook">
             </a>
           </div>
           <div>
-            <a href="#" class="spotify">
+            <a href="#" class="spotify" target="_blank">
               <img class="google card_brend" src="./img/logo/spotify.png" alt="Sporify">
             </a>
           </div>
           <div>
-            <a href="#" class="">
+            <a href="#" target="_blank">
               <img class="google card_brend" src="./img/logo/nike.png" alt="Nike">
             </a>
           </div>
@@ -394,8 +398,8 @@
             </p>
             <div class="clients_say_sign">
               <img class="clients_say_photo" src="./img/clients_say/Man1.jpg" alt="Photo">
-              <span class="clients_say_name">John Scott</span>
-              <span class="clients_say_work">The Fringe</span>
+              <span class="clients_say_name">Pavliv Yaroslav</span>
+              <span class="clients_say_work">Web designer</span>
             </div>
           </div>
           <div class="clients_say_card">
@@ -419,8 +423,8 @@
             </p>
             <div class="clients_say_sign">
               <img class="clients_say_photo" src="./img/clients_say/Man1.jpg" alt="Photo">
-              <span class="clients_say_name">John Scott</span>
-              <span class="clients_say_work">The Fringe</span>
+              <span class="clients_say_name">Pavliv Yaroslav</span>
+              <span class="clients_say_work">Web designer</span>
             </div>
           </div>
           <div class="clients_say_card">
@@ -442,21 +446,31 @@
         <p class="contacts_form_text">Sign up for our newsletter to receive updates</p>
         <form action="/login" method="POST" class="contacts_form_area">
           <label>
-            <input class="contacts_form_name" type="text" placeholder="Name">
+            <input class="contacts_form_gen" type="text" placeholder="Name">
           </label>
           <label>
-            <input class="contacts_form_phone" type="tel" placeholder="Phone">
+            <input class="contacts_form_gen" type="tel" placeholder="Phone">
           </label>
           <label>
-            <input class="contacts_form_email" type="tel" placeholder="E-mail">
+            <input class="contacts_form_gen" type="tel" placeholder="E-mail">
           </label>
-          <button class="button_form">Send</button>
+          <button class="contacts_form_but">Send</button>
         </form>
       </div>
     </section>
   </main>
   <footer>
-    <section class="footer"></section>
+    <section class="footer">
+      <div class="container clearfix fotter_div">
+        <p class="fotter_text">All rights reserved 2015</p>
+        <div class="social_icons">
+          <a href="#" target="_blank"><img src="./img/footer/icon_twitter.jpg" alt="twitter"></a>
+          <a href="#" target="_blank"><img src="./img/footer/icon_facebook.jpg" alt="facebook"></a>
+          <a href="#" target="_blank"><img src="./img/footer/icon_vk.jpg" alt="vk"></a>
+        </div>
+        <div class="fotter_number"><a href="tel:1234243123">1 234 243 123</a></div>
+      </div>
+    </section>
   </footer> 
   
   <!--
@@ -504,7 +518,7 @@
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
       }
     }
   ]
@@ -521,6 +535,17 @@
       slidesToShow: 2,
       adaptiveHeight: true,
       slidesToScroll: 1,
+      responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        button: false,
+      }
+    }
+  ]
   });
   });
 </script>
