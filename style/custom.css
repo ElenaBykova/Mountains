@@ -113,7 +113,9 @@ body {
   margin: 40px 40px 0px 50px;
 }
 /*End Popup*/
-
+.position-relative {
+  position: relative;
+}
 header {
   background-color: #bad2e260;
   min-height: 90px;
@@ -128,11 +130,11 @@ header {
 }
 .logo {
   display: inline;
-  margin: 30px 50px 0px 35px;
+  margin: 25px 55px 0px 35px;
 }
 .header-nav ul li {
   float: left;
-  padding-top: 37px;
+  padding-top: 30px;
 }
 ul a {
   text-decoration: none;
@@ -167,12 +169,12 @@ li a:active {
   letter-spacing: 3px;
   cursor: pointer;
   text-decoration: none;
-  padding: 15px 42px;
+  padding: 15px 39px;
   box-sizing: border-box;
   position: absolute;
   z-index: 52;
-  margin-left: 17.9%;
-  margin-top: 5px;
+  margin-left: 21%;
+  max-width: 156px;
 }
 .button_callus:hover {
   background-color: #36aeea;
@@ -204,7 +206,7 @@ background-image: url(../img/section-1/no-man-bg.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
-padding: 220px 0px 150px 0px;
+padding: 220px 0px 155px 0px;
 }
 
 .h1 {
@@ -247,6 +249,7 @@ display: block;
   border: 3px solid white;
   padding: 33px 35px;
   margin-left: 20px;
+  margin-right: 20px;
 }
 .button_ordernow {
   background-color: #36aeea;
@@ -278,21 +281,19 @@ display: block;
   outline: none;
 }
 .sec-1--man {
-  min-width: 55%;
+  max-width: 100%;
   position: absolute;
   z-index: 3;
   top: -8px;
-  right: -203px;
 }
 .sec-1--boxtop {
   border-bottom: 3px solid white;
-  padding: 33px 35px;
-  margin-left: 20px;
-  position: absolute;
-  z-index: 4;
-  min-width: 900px;
-  top: 472px;
-  left: 352px;
+    padding: 33px 0px;
+    margin-left: 20px;
+    position: absolute;
+    z-index: 4;
+    min-width: 1074px;
+    top: 472px;
 }
 
 
@@ -361,8 +362,8 @@ display: block;
 }
 .img_girls {
   float: left;
-  width: 800px;
-  height: 570px;
+  min-width: 800px;
+  min-height: 570px;
   background-color: white;
   background-image: url(../img/section-2/girls.jpg);
   background-size: cover;
@@ -373,8 +374,8 @@ display: block;
   z-index: 4;
 }
 .img_legs {
-  width: 350px;
-  height: 350px;
+  min-width: 350px;
+  min-height: 350px;
   float: left;
   background-color: white;
   background-image: url(../img/section-2/legs.jpg);
@@ -393,10 +394,10 @@ display: block;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  min-width: 130px;
+  letter-spacing: 2px;
+  width: 130px;
   height: 40px;
-  padding: 0px 25px 0px 25px;
+  padding: 0px 10px 0px 10px;
   margin-top: 30px;
   margin-bottom: 235px;
 }
@@ -562,7 +563,7 @@ display: block;
 }
 .form-div {
   padding-top: 145px;
-  padding-bottom: 235px;
+  padding-bottom: 245px;
   margin-left: 20px;
 }
 .form-text {
@@ -653,7 +654,7 @@ input.your_phone:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 75px auto 60px;
+  margin: 80px auto 5px;
 }
 .how_we_work-card {
   width: 25%;
@@ -804,7 +805,7 @@ input.your_phone:focus {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 1077px;
+  min-height: 1090px;
 }
 .sec-6-div {
   position: relative;
@@ -863,7 +864,7 @@ button.slick-next:before {
 .slider {
   position: absolute;
   z-index: 2;
-  margin-top: 95px;
+  margin-top: 100px;
   width: 100%;
 }
 .slider_star {
@@ -983,7 +984,8 @@ button.slick-next:before {
   display: grid;
   grid-gap: 2vw;
   grid-template-columns: 1fr 1.5fr 2fr;
-  margin: 70px auto;
+  margin: 80px auto 70px;
+  padding: 0 15px;
 }
 .gallery-grid > div:nth-child(1) {
   grid-row-start: 1;
@@ -1027,27 +1029,20 @@ button.slick-next:before {
 }
 .slack {
   width: 80px;
-  padding-right: 10px;
+  padding-right: px;
+  padding-left: 10px;
 }
 .adobe {
   width: 35px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 .google {
   width: 80px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 .facebook {
   width: 80px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 .spotify {
   width: 80px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 .nike {
   width: 70px;
@@ -1084,6 +1079,7 @@ img.card_brend:hover {
   color: #adadad;
   margin-top: 10px;
   word-spacing: 2px;
+  overflow: auto;
 }
 .clients_say_sign {
   display: flex;
@@ -1409,6 +1405,9 @@ a {
   .social_icons {
     order: 1;
     margin: 2px auto;
+  }
+  .clients_say_photo {
+    display: none;
   }
   .fotter_number {
     order: 2;
