@@ -187,9 +187,11 @@
             <label>
               <input class="your_phone" type="tel" placeholder="Your phone:">
             </label>
-            <button class="button_form">Read more</button>
+            <button class="button_form">Order now</button>
           </form>
-          <p class="form_comment">* Your data will not be transeffered</p>
+          <p class="form_comment">
+            <img class="icon_lock" src="./img/icons/Lock _locked.png" alt="Lock">* Your data will not be transeffered
+          </p>
         </div>
       </div>
     </section>
@@ -466,82 +468,83 @@
         <div class="fotter_number"><a href="tel:1234243123">1 234 243 123</a></div>
       </div>
     </section>
+  </footer>
   
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-  <script type="text/javascript" src="./slider/slick.min.js"></script>
+      <script type="text/javascript" src="./slider/slick.min.js"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.autoplay').slick({
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      autoplay: true,
-      centerPadding: 17.5,
-      autoplaySpeed: 2000,
-      infinity: true,
-      responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      }
-    }
-  ]
-    });
-    });
-  </script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.autoplay').slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: true,
+          centerPadding: 17.5,
+          autoplaySpeed: 2000,
+          infinity: true,
+          responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+      ]
+        });
+        });
+      </script>
 
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('.one-time').slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 2,
-      adaptiveHeight: true,
-      slidesToScroll: 1,
-      responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        button: false,
-      }
-    }
-  ]
-  });
-  });
-</script>
-
-  <!--<script src="./js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-    </script>-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.one-time').slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 2,
+          adaptiveHeight: true,
+          slidesToScroll: 1,
+          responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            button: false,
+          }
+        }
+      ]
+      });
+      });
     </script>
-  </body>
+
+      <!--<script src="./js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+        </script>-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+</body>
 </html>
